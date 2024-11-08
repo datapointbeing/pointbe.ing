@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --page-whalmost: #F2F1F8;
+  --page-whalmost: #FDFCFB;
   --reg-blalmost: #212125;
+  --accent-denine: #D9D9D9;
   --accent-winkle: #71719C;
+  --accent-noncommittal-winkle: #F2F1F8;
+
+  --tiny-shadow: 0 3px 1px -3px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -45,14 +49,108 @@ h1 {
 
 h2, h3 {
   font-family: Inter, sans-serif;
+}
+
+h2 {
   margin: 1.75em 0 0.25em 0;
   font-weight: 300;
 }
 
-h2:first-child, h3:first-child {
+h3 {
+  font-weight: 600;
+}
+
+h2:first-child {
   margin: 1.25em 0 0.25em 0;
 }
 
 .project-block {
+  background-color: var(--accent-noncommittal-winkle);
 
+  border-width: 1.25pt;
+  border-color: var(--accent-denine);
+  border-style: dotted none;
+
+  padding: 1em 2em;
+  margin: 0.8em 0.5em 0 0.5em;
+
+  display: flex;
+}
+
+.project-block > *:first-child {
+  background-color: var(--page-whalmost);
+
+  padding: 1.5em 1em;
+  border-radius: 1em;
+
+  max-width: 200px;
+  text-align: center;
+
+  border: 1.25pt dotted darkgrey;
+}
+
+.project-block > *:last-child {
+  padding: 0 1.5em;
+  font-size: larger;
+}
+
+.project-block h3 {
+  margin: 0 0 0.2em 0;
+}
+
+.project-block hr {
+  margin: 0.1em 0 0.6em 0;
+}
+
+.project-block a {
+  text-decoration-line: none;
+  color: inherit;
+
+  background-image: linear-gradient(var(--page-whalmost) 50%, lightgoldenrodyellow);
+  background-size: 100% 200%;
+  background-position: 0 1%;
+
+  transition: background-position 0.15s ease-out;
+}
+
+.project-block a[target="_blank"] > h3:after {
+  content: " \1F5D7";
+
+  line-height: 1em;
+  font-size: larger;
+  font-weight: normal;
+}
+
+.project-block a:hover {
+  background-position: 0 100%;
+}
+
+.project-block img {
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 0.5em;
+  box-shadow: var(--tiny-shadow);
+}
+
+hr {
+  height: 0.6pt;
+
+  color: var(--accent-denine);
+  background-color: var(--accent-denine);
+  border-color: var(--accent-denine);
+}
+
+@media screen and (max-width: 580px) {
+  .project-block {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .project-block > *:last-child {
+    padding: 0;
+
+    width: 100%;
+  }
 }
