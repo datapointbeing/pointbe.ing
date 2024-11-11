@@ -75,6 +75,7 @@ a[target="_blank"]:after {
   font-size: larger;
 
   font-weight: normal;
+  font-family: Arial, sans-serif;
 }
 
 a:hover {
@@ -84,6 +85,10 @@ a:hover {
 
 .winkle {
   color: var(--accent-winkle);
+}
+
+.uc-sym {
+  font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -164,6 +169,8 @@ ul.links-inline > li > a {
 ul.links-inline > li:not(:last-child):after {
   content: " ◈ ";
   pointer-events: none;
+
+  font-family: Arial, sans-serif;
 }
 
 
@@ -209,6 +216,7 @@ ul.links-inline > li:not(:last-child):after {
   font-size: larger;
 
   font-weight: normal;
+  font-family: Arial, sans-serif;
 }
 
 .project-block > a[target="_blank"]:first-child:after {
