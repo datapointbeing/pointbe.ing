@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@font-face {
+  font-family: Symbola;
+  src: url(../fonts/Symbola.ttf);
+}
+
+@font-face {
+  font-family: FreeSans;
+  src: url(../fonts/FreeFont/FreeSans.ttf);
+}
+
+@font-face {
+  font-family: FreeSans;
+  src: url(../fonts/FreeFont/FreeSansBold.ttf);
+  font-weight: bold;
+}
+
 :root {
   --page-whalmost: #FDFCFB;
   --reg-blalmost: #212125;
@@ -75,7 +91,7 @@ a[target="_blank"]:after {
   font-size: larger;
 
   font-weight: normal;
-  font-family: Arial, sans-serif;
+  font-family: Symbola, sans-serif;
 }
 
 a:hover {
@@ -87,8 +103,12 @@ a:hover {
   color: var(--accent-winkle);
 }
 
+.sym {
+  font-family: FreeSans, sans-serif;
+}
+
 .uc-sym {
-  font-family: Arial, sans-serif;
+  font-family: Symbola, sans-serif;
 }
 
 h1 {
@@ -170,7 +190,7 @@ ul.links-inline > li:not(:last-child):after {
   content: " ◈ ";
   pointer-events: none;
 
-  font-family: Arial, sans-serif;
+  font-family: Symbola, sans-serif;
 }
 
 
@@ -216,7 +236,7 @@ ul.links-inline > li:not(:last-child):after {
   font-size: larger;
 
   font-weight: normal;
-  font-family: Arial, sans-serif;
+  font-family: Symbola, sans-serif;
 }
 
 .project-block > a[target="_blank"]:first-child:after {
