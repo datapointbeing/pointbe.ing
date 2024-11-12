@@ -102,7 +102,7 @@ a[target="_blank"]:after {
 }
 
 a:hover {
-  background-position: 0 100%;
+  background-position: 0 calc(100% + 1.25pt);
 }
 
 
@@ -120,6 +120,7 @@ a:hover {
 
 .kero {
   display: flex;
+  justify-content: end;
   align-items: start;
 
   font-family: FreeSans, sans-serif;
