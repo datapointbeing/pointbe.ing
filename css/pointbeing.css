@@ -111,10 +111,25 @@ a:hover {
   font-family: Symbola, sans-serif;
 }
 
-.dimple {
+.kero {
+  display: inline-block;
+  font-family: FreeSans, sans-serif;
+}
+
+.kero > * {
+  display: inline-block;
+}
+
+.kero > .dimple {
   font-family: Inter, sans-serif;
   line-height: 1em;
   font-size: larger;
+
+  min-width: 0.1em;
+}
+
+.kero > .dimple:last-child {
+  text-align: right;
 }
 
 h1 {
