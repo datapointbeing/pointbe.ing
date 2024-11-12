@@ -16,6 +16,13 @@
   font-weight: bold;
 }
 
+/*
+@font-face {
+  font-family: FreeMono;
+  src: url(../fonts/FreeFont/FreeMono.ttf);
+}
+*/
+
 :root {
   --page-whalmost: #FDFCFB;
   --reg-blalmost: #212125;
@@ -112,24 +119,32 @@ a:hover {
 }
 
 .kero {
-  display: inline-block;
+  display: flex;
+  align-items: start;
+
   font-family: FreeSans, sans-serif;
+
+  white-space: pre;
 }
 
 .kero > * {
+  height: 1em;
   display: inline-block;
 }
 
 .kero > .dimple {
-  font-family: Inter, sans-serif;
-  line-height: 1em;
-  font-size: larger;
-
-  min-width: 0.1em;
+  transform: translateX(0.12em);
+  display: flex;
+  flex-direction: column;
 }
 
-.kero > .dimple:last-child {
-  text-align: right;
+.kero > .dimple:before {
+  content: " \033B";
+}
+
+.kero > .dimple:after {
+  content: " \033B";
+  margin-top: -1.05em;
 }
 
 h1 {
