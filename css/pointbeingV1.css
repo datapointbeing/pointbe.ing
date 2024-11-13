@@ -195,6 +195,7 @@ h1 {
 
 h2, h3 {
   font-family: Inter Tight, sans-serif;
+  text-wrap: pretty;
 }
 
 h2 {
