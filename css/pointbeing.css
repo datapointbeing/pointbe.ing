@@ -69,6 +69,8 @@ body > .pb-foot > div {
 
   flex-direction: row;
   justify-content: space-between;
+
+  text-wrap: balance;
 }
 
 
@@ -88,7 +90,7 @@ a {
   display: inline-block;
   box-sizing: border-box;
 
-  margin: -0.4em 0;
+  margin: -1.25pt 0;
 
   padding: 0 2pt;
 
@@ -131,20 +133,19 @@ img {
   font-family: Symbola, sans-serif;
 }
 
-.dashed-border {
+.border-wrap {
   width: fit-content;
   height: fit-content;
+}
 
+.dashed-border {
   border-radius: 1em;
   padding: 1em;
   border: 1.25pt dashed var(--accent-aynine);
 }
 
 .soft-border {
-  width: fit-content;
-  height: fit-content;
-
-  padding: 0 1em;
+  padding: 1em;
 
   border-radius: 1em 0 0 0;
   border-width: 1.25pt;
@@ -213,15 +214,13 @@ ul.notes-inline {
   list-style: none;
   pointer-events: none;
 
-  padding: 0;
-
   width: fit-content;
   position: relative;
 }
 
 ul.notes-inline.framed {
   padding: 0.75em;
-  margin: 1em 0.25em;
+  margin: 1em 0.25em 2em 0.25em;
 }
 
 ul.notes-inline.framed:before {
@@ -263,6 +262,7 @@ ul.notes-inline > li {
 }
 
 ul.notes-inline > li > * {
+  display: inline-block;
   pointer-events: auto;
 }
 
@@ -295,18 +295,25 @@ ul.notes-inline > li:not(:last-child):after {
 
 .about-block {
   display: flex;
+  align-items: center;
+}
+
+.about-block p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
 }
 
 .about-block p:first-child {
   font-family: Inter Tight, sans-serif;
   margin-top: 0;
+  text-wrap: balance;
 }
 
 .about-block p:first-child > strong {
   display: block;
   font-size: xx-large;
 
-  font-weight: normal;
+  font-weight: 500;
   text-decoration: underline dotted var(--accent-aynine);
   text-underline-offset: 8.5pt;
 }
@@ -393,7 +400,7 @@ hr {
   border-color: var(--accent-denine);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .project-block > p > a.width-kept {
     max-width: unset;
   }
@@ -409,6 +416,17 @@ hr {
     padding: 5vw;
   }
 
+  ul.notes-inline, ul.notes-inline.framed {
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  }
+
+  ul.notes-inline > li:not(:last-child):after {
+    content: "\A◈\A";
+  }
+
   .view-only.desktop {
     display: none;
   }
@@ -418,17 +436,18 @@ hr {
     flex-direction: column;
   }
 
-  .about-block > *:last-child {
-    margin-top: 0.5em;
+  .about-block p {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
   }
 
   .about-block p:first-child {
+    margin: 0.5em 0 0 0;
     text-align: center;
-    text-wrap: balance;
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
   .view-only.mobile {
     display: none;
   }
