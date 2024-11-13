@@ -290,7 +290,7 @@ ul.notes-inline > li:not(:last-child):after {
   background-color: var(--accent-aynine);
 
   width: 1pt;
-  height: 80%;
+  height: 70%;
   border-radius: 1pt;
 }
 
