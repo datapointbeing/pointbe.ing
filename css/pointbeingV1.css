@@ -77,6 +77,8 @@ body > .pb-foot > div {
 a {
   color: inherit;
   text-decoration-line: none;
+  font-family: Inter Tight, sans-serif;
+
   border-radius: 0.4em;
   font-weight: 600;
   border: 1.25pt dotted var(--accent-aynine);
@@ -123,6 +125,10 @@ img {
 
 .winkle {
   color: var(--accent-winkle);
+}
+
+.tightened {
+  font-family: Inter Tight, sans-serif;
 }
 
 .sym {
