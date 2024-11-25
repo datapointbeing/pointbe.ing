@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pointbeingV1.css">
+  <link rel="stylesheet" href="css/pb-collapsibleV0.css">
 
   <meta name="description" content="">
 
@@ -27,29 +28,29 @@
 
 <body>
   <div class="pb-head">
-    <h1>Ed Carrotta</h1>
-    Welcome to my site! This page is under construction, but see my links and work below.
+    <h1 id="title">Ed Carrotta</h1>
+      Welcome to my site! This page is under construction, but see my links and work below.
     <hr>
   </div>
 
   <div class="pb-content">
-    <h2>Links</h2>
+    <h2 id="links">Links</h2>
     <ul class="notes-inline framed">
       <li>
-        <a href="RESUME.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <a href="RESUME.pdf" title="Resume" target="_blank" rel="noreferrer">Resume</a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/pointbeing/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/pointbeing/" title="Ed on LinkedIn" target="_blank" rel="noreferrer">LinkedIn</a>
       </li>
       <li>
-        <a href="https://github.com/datapointbeing" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/datapointbeing" title="Ed on GitHub" target="_blank" rel="noreferrer">GitHub</a>
       </li>
       <li>
-        <a href="https://bsky.app/profile/pointbe.ing" target="_blank" rel="noreferrer">Bluesky</a>
+        <a href="https://bsky.app/profile/pointbe.ing" title="Ed on Bluesky" target="_blank" rel="noreferrer">Bluesky</a>
       </li>
     </ul>
 
-    <h2>Me</h2>
+    <h2 id="about">Me</h2>
     <div class="about-block">
       <div class="border-wrap dashed-border">
         <img class="portrait" src="img/jec.jpg" alt="Ed Carrotta" width="200px">
@@ -86,140 +87,171 @@
       </div>
     </div>
 
-    <h2>Selected Work</h2>
+    <h2 id="works">Selected Work</h2>
 
     <div id="fdg24" class="project-block">
-      <a href="https://fdg2024.org/" target="_blank" rel="noreferrer">
+      <a href="https://fdg2024.org/" title="Foundations of Digital Games 2024 Official Site" target="_blank" rel="noreferrer">
         <h3>FDG 2024 Conference Web Presence</h3>
         <hr>
-        <img src="img/thumb/fdg24.png" alt="Foundations of Digital Games 2024">
+        <img src="img/thumb/fdg24.png" alt="Foundations of Digital Games 2024 logo thumbnail">
       </a>
 
-      <p>
-        The international Foundations of Digital Games conference (FDG) series, operated annually by the
-        <a class="width-kept" href="https://sasdg.org/" target="_blank" rel="noreferrer"><span>Society for the Advancement of the Science of Digital Games</span></a>
-        (SASDG), is a nexus for critical discussion and exploration in the academic space of game design/immersive play.
-      </p>
-      <p>
-        I could not be prouder to have served as the Web Chair and website developer for its 19th consecutive conference
-        session, FDG 2024, hosted at my own home institution of WPI for the first time.
-      </p>
-      <p>
-        As I coordinated with both academic stakeholders and sponsor representatives from Studios
-        Quality-Xbox Game Studios, I took pride in ensuring our central conference motif of inclusivity
-        and community remained at the forefront. Color was crucial: the site is introduced with the warm hues
-        of our campus in the spring, and the color-spectrum theme that follows evokes unity
-        and builds a visual brand familiar to attendees of the conference in the last few years (e.g. 2021, 2023).
-      </p>
-      <p>
-        Our wonderful logo by '22 alum <a href="https://shiiba.co/" target="_blank" rel="noreferrer"><span>Hannah Belan</span></a>
-        was my core reference; I was beyond pleased that many attendees thought the site and logo were created by the
-        same person due to their consistency.
-      </p>
-      <p>
-        Writing the HTML and stylesheet from scratch, I sought animations that felt lively
-        yet avoided superfluous Javascript or problems with accessibility.
-        To this end I harnessed CSS flex transitions, noticeable in the tactile "file cabinet rifling"
-        metaphor of the site navigation tabs. It's always far preferable to use the constraints of CSS to guide me
-        rather than fighting against it in the creative process.
-      </p>
-      <p>
-        I also found this a delightful way to connect with our audience via an interactive reference. Harnessing something
-        familiar in our professional world, and transforming it into both a signifier and an engaging toy at once – does that not
-        capture the core magic of games academia?
-      </p>
+      <div>
+        <p>
+          The international Foundations of Digital Games (FDG) conference series, operated annually by the
+          <a class="width-kept" href="https://sasdg.org/" title="SASDG Official Site" target="_blank" rel="noreferrer"><span>Society for the Advancement of the Science of Digital Games</span></a>
+          (SASDG), is a nexus for critical discussion and exploration in the academic space of game design/immersive play.
+        </p>
+        <p>
+          I could not be prouder to have served as the Web Chair and website developer for its 19th consecutive
+          conference session, FDG 2024, hosted at my own home institution of WPI for the first time.
+        </p>
+        <p>
+          As I coordinated with both academic stakeholders and sponsor representatives from
+          <a href="https://www.linkedin.com/company/studios-quality/" title="Studios Quality on LinkedIn" target="_blank" rel="noreferrer">
+            Studios Quality - Xbox Game Studios
+          </a>,
+          I took pride in ensuring our central conference motif of inclusivity
+          and community remained at the forefront. Color was crucial: the site is introduced with the warm hues
+          of our campus in the spring, and the color-spectrum theme that follows evokes unity
+          and builds a visual brand familiar to attendees of the conference in the last few years (e.g. 2021, 2023).
+        </p>
+        <p>
+          Our wonderful logo by '22 alum <a href="https://shiiba.co/" title="Hannah Belan's Portfolio" target="_blank" rel="noreferrer"><span>Hannah Belan</span></a>
+          was my core reference; I was beyond pleased that many attendees thought the site and logo were created by the
+          same person due to their consistency.
+        </p>
+        <p>
+          Writing the HTML and stylesheet from scratch, I sought animations that felt lively
+          yet avoided superfluous Javascript or problems with accessibility.
+          To this end I harnessed CSS flex transitions, noticeable in the tactile "file cabinet rifling"
+          metaphor of the site navigation tabs. It's always far preferable to use the constraints of CSS to guide me
+          rather than fighting against it in the creative process.
+        </p>
+        <p>
+          I also found this a delightful way to connect with our audience via an interactive reference. Harnessing
+          something
+          familiar in our professional world, and transforming it into both a signifier and an engaging toy at once –
+          does that not
+          capture the core magic of games academia?
+        </p>
+      </div>
+      <!--
+      <div class="button-set">
+        <div data-fn="link" tabindex="0" title="Copy section link"></div>
+        <div data-fn="open" tabindex="0" title="View more"></div>
+      </div>
+      -->
     </div>
 
-    <div id="cpblguide" class="project-block">
-      <a href="https://cpblguide.wpi.edu/" target="_blank" rel="noreferrer">
-        <h3>IDeaS and WPI CPBL: Capacity Building Handbook</h3>
+    <div class="project-block">
+      <a href="https://cpblguide.wpi.edu/" title="Capacity Building Handbook" target="_blank" rel="noreferrer">
+        <h3 id="cpblguide">IDeaS and WPI CPBL: Capacity Building Handbook</h3>
         <hr>
-        <img src="img/thumb/cpbl.png" alt="Capacity Building Handbook">
+        <img src="img/thumb/cpbl.png" alt="Capacity building handbook, mind map snippet">
       </a>
 
-      <p>
-        <i>Note that the web application is intended for desktop devices.</i>
-      </p>
-      <p>
-        My first project with the <a class="width-kept" href="https://ids.wpi.edu/" target="_blank" rel="noreferrer"><span>Intentional Design Studio</span></a>
-        (IDeaS) saw me collaborating closely with the <a class="width-kept" href="https://wp.wpi.edu/projectbasedlearning/" target="_blank" rel="noreferrer"><span>Center for Project Based Learning</span></a>
-        at WPI as part of a talented team of three. We were tasked with translating the Center's guide to capacity
-        building and institutional change, a rich document compiled over the course of previous research projects, into an
-        interactive format. My personal role was as a co-designer as well as the sole developer for our React webapp.
-      </p>
-      <p>
-        Given how uniquely the material applies depending on the reader, we felt
-        that an expressive digital notebook was a perfect model: by focusing on the pace of information, and creating
-        ample opportunities for learners to record their own ideas, we aimed to help our audience contextualize
-        the guide into their own professional world. Thus the reader would come away from the material with a reflective
-        handbook <i>authored by them</i>, tailored to address their team's needs, and formatted to be printed
-        and shared.
-      </p>
-      <p>
-        In my design work, I reinforced getting readers to tap into and focus the intuition
-        that they already had – after all, we weren't in their heads! Who were we, to pretend to know their circumstances
-        better than they do? Capacity building fails when treated as a "one-size-fits-all" process, so all we could
-        do was give our audience <i>gentle guidance</i>; forcing their hand or condescending them would undermine our goal.
-      </p>
-      <p>
-        As such, one of my feature contributions was the presentation of optional text and hint buttons
-        throughout many sections, facilitated by the "little annotation guy" who ties them to an approachable face.
-        Not every reader makes use of his help or external resources in their journey, but for those who do, I aimed to not only
-        destigmatize the learning process, but to make it <i>rewarding</i> to view the endearing expressions
-        and plain-english insights of a tiny mascot character.
-      </p>
-      <p>
-        Our experimental "mind map" directory, which serves as the homepage, was built to encourage
-        readers to explore and approach our content nonlinearly.
-        In anticipation of future additions to this handbook, my modular content system automatically
-        creates URL routes for new section objects and populates them in both this map and the chapter sidebar.
-      </p>
+      <div>
+        <p>
+          <i>Note that the web application is intended for desktop devices.</i>
+        </p>
+        <p>
+          My first project with the <a class="width-kept" href="https://ids.wpi.edu/" title="Intentional Design Studio" target="_blank"
+                                       rel="noreferrer"><span>Intentional Design Studio</span></a>
+          (IDeaS) saw me collaborating closely with the <a class="width-kept"
+                                                           href="https://wp.wpi.edu/projectbasedlearning/" title="Center for Project Based Learning @ WPI"
+                                                           target="_blank" rel="noreferrer"><span>Center for Project Based Learning</span></a>
+          at WPI as part of a talented team of three. We were tasked with translating the Center's guide to capacity
+          building and institutional change, a rich document compiled over the course of previous research projects,
+          into an
+          interactive format. My personal role was as a co-designer as well as the sole developer for our React webapp.
+        </p>
+        <p>
+          Given how uniquely the material applies depending on the reader, we felt
+          that an expressive digital notebook was a perfect model: by focusing on the pace of information, and creating
+          ample opportunities for learners to record their own ideas, we aimed to help our audience contextualize
+          the guide into their own professional world. Thus the reader would come away from the material with a
+          reflective
+          handbook <i>authored by them</i>, tailored to address their team's needs, and formatted to be printed
+          and shared.
+        </p>
+        <p>
+          In my design work, I reinforced getting readers to tap into and focus the intuition
+          that they already had – after all, we weren't in their heads! Who were we, to pretend to know their
+          circumstances
+          better than they do? Capacity building fails when treated as a "one-size-fits-all" process, so all we could
+          do was give our audience <i>gentle guidance</i>; forcing their hand or condescending them would undermine our
+          goal.
+        </p>
+        <p>
+          As such, one of my feature contributions was the presentation of optional text and hint buttons
+          throughout many sections, facilitated by the "little annotation guy" who ties them to an approachable face.
+          Not every reader makes use of his help or external resources in their journey, but for those who do, I aimed
+          to not only
+          destigmatize the learning process, but to make it <i>rewarding</i> to view the endearing expressions
+          and plain-english insights of a tiny mascot character.
+        </p>
+        <p>
+          Our experimental "mind map" directory, which serves as the homepage, was built to encourage
+          readers to explore and approach our content nonlinearly.
+          In anticipation of future additions to this handbook, my modular content system automatically
+          creates URL routes for new section objects and populates them in both this map and the chapter sidebar.
+        </p>
+      </div>
     </div>
 
-    <div id="fbdapp" class="project-block">
-      <a href="https://fbdapp.wpi.edu/" target="_blank" rel="noreferrer">
-        <h3>IDeaS and WPI MME: API + UX overhaul for FBD App</h3>
+    <div class="project-block">
+      <a href="https://fbdapp.wpi.edu/" title="FBD App Class Portal" target="_blank" rel="noreferrer">
+        <h3 id="fbdapp">IDeaS and WPI MME: API + UX overhaul for FBD App</h3>
         <hr>
-        <img src="img/thumb/fbd.png" alt="FBD App">
+        <img src="img/thumb/fbd.png" alt="FBD App roster view">
       </a>
 
-      <p>&ltMORE INFO SOON&gt</p>
+      <div>
+        <p>&ltMORE INFO SOON&gt</p>
+      </div>
     </div>
 
-    <div id="comroddity" class="project-block">
-      <a href="https://comroddity.wpi.edu/" target="_blank" rel="noreferrer">
-        <h3>ARG webware for <i>Comroddity!</i></h3>
+    <div class="project-block">
+      <a href="https://comroddity.wpi.edu/" title="Comroddity: Unexpect Everything!" target="_blank" rel="noreferrer">
+        <h3 id="comroddity">ARG webware for <i>Comroddity!</i></h3>
         <hr>
-        <img src="img/thumb/comroddity.png" alt="Comroddity: Unexpect Everything!">
+        <img src="img/thumb/comroddity.png" alt="Comroddity: Unexpect Everything! logo and graphic">
       </a>
 
-      <p>&ltMORE INFO SOON&gt</p>
+      <div>
+        <p>&ltMORE INFO SOON&gt</p>
+      </div>
     </div>
 
-    <div id="feverchill" class="project-block">
-      <a href="/JEC-IMGD4099-FINAL/" target="_blank" rel="noreferrer">
-        <h3><i>FEVER</i> and <i>CHILL</i>: Reaction-diff and other WGSL experiments</h3>
+    <div class="project-block">
+      <a href="/JEC-IMGD4099-FINAL/" title="CHILL Reaction-Diffusion via Compute Shader" target="_blank" rel="noreferrer">
+        <h3 id="feverchill"><i>FEVER</i> and <i>CHILL</i>: Reaction-diff and other WGSL experiments</h3>
         <hr>
-        <img src="img/thumb/rxndiff.png" alt="CHILL Reaction Diffusion">
+        <img src="img/thumb/rxndiff.png" alt="Fluid pattern created in CHILL reaction-diffusion">
       </a>
 
-      <p>&ltMORE INFO SOON&gt</p>
+      <div>
+        <p>&ltMORE INFO SOON&gt</p>
+      </div>
     </div>
 
-    <div id="carrotbowl" class="project-block">
-      <a href="/Carrot-Bowl-Studios/" target="_blank" rel="noreferrer">
-        <h3>Carrot Bowl Studios: Constrained webtoys in <i>Perlenspiel 3</i></h3>
+    <div class="project-block">
+      <a href="/Carrot-Bowl-Studios/" title="Carrot Bowl Studios" target="_blank" rel="noreferrer">
+        <h3 id="carrotbowl">Carrot Bowl Studios: Constrained webtoys in <i>Perlenspiel 3</i></h3>
         <hr>
-        <img src="img/thumb/ps3.png" alt="Carrot Bowl Studios -- Perlenspiel Samples">
+        <img src="img/thumb/ps3.png" alt="Capture from Wackelzeug webtoy">
       </a>
 
-      <p>&ltMORE INFO SOON&gt</p>
+      <div>
+        <p>&ltMORE INFO SOON&gt</p>
+      </div>
     </div>
 
     <p style="font-size: 0.7em">
       <span style="display: inline-block">(Too many words? Guilty.</span>
       <span style="display: inline-block">
-        <a href="RESUME.pdf" target="_blank" rel="noreferrer">View my resume</a> for a more concise overview.)
+        <a href="RESUME.pdf" title="Resume" target="_blank" rel="noreferrer">View my resume</a> for a more concise overview.)
       </span>
     </p>
 
@@ -233,7 +265,7 @@
     </div>
   </div>
 
-  <script src="js/app.js"></script>
+  <!-- <script src="js/pb.js"></script> -->
 
 </body>
 

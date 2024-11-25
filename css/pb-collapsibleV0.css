@@ -1,0 +1,94 @@
+:root {
+  --bouncy: cubic-bezier(.07,.39,.33,1.02);
+}
+
+/*
+@property --opened {
+  syntax: "<string>";
+  inherits: true;
+  initial-value: "";
+}
+*/
+
+div.button-set {
+  display: flex;
+  align-items: center;
+}
+
+div.button-set > * {
+  height: 1.1em;
+  width: 1.1em;
+  margin: 0.1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3em;
+  line-height: 0;
+
+  border-width: 1.25pt;
+  border-color: var(--reg-blalmost);
+  border-style: solid dotted dotted solid;
+  border-radius: 2pt;
+
+  background-image: linear-gradient(
+    150deg,
+    var(--page-whalmost) 50%,
+    var(--accent-noncommittal-winkle) 65%,
+    var(--accent-winkle) 200%
+  );
+  background-size: 200% 200%;
+  background-position: -1.25pt -1.25pt;
+
+  transition:
+    background-position 0.2s ease-in-out,
+    transform 0.07s var(--bouncy),
+    color 0.07s var(--bouncy),
+    border-color 0.07s var(--bouncy),
+    border-radius 0.12s var(--bouncy) 0.04s,
+    flex 0.2s ease-out 0.3s;
+
+  cursor: pointer;
+  pointer-events: visible;
+}
+
+div.button-set > *:hover {
+  background-position: calc(100% + 1.25pt) calc(100% + 1.25pt);
+}
+
+div.button-set > *[data-fn="open"]:after {
+  display: block;
+  content: "⮷";
+
+  font-family: Symbola, sans-serif;
+}
+
+div.button-set > *[data-fn="link"]:after {
+  display: block;
+  content: "§";
+  font-style: oblique;
+
+  font-size: 0.8em;
+  transform: scaleX(120%) translateY(-0.1em);
+
+  font-family: Inter, sans-serif;
+}
+
+div.button-set > *[data-fn="link"]:focus {
+  color: limegreen;
+  border-color: limegreen;
+}
+
+div.button-set > *[data-fn="link"]:focus:after {
+  content: "✅︎";
+  transform: none;
+
+  font-style: normal;
+  font-weight: bold;
+}
+
+div.button-set > *:active {
+  transform: scaleX(115%) translateY(-0.08em);
+  border-radius: 8pt;
+}
