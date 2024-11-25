@@ -208,19 +208,106 @@
       </a>
 
       <div>
-        <p>&ltMORE INFO SOON&gt</p>
+        <p>
+          The iOS-published <i>Free-Body Diagram</i> application is a multi-year collaboration between
+          <a class="width-kept"
+             href="https://ids.wpi.edu/"
+             title="Intentional Design Studio"
+             target="_blank"
+             rel="noreferrer">
+            <span>IDeaS</span>
+          </a>
+          and the
+          <a class="width-kept"
+             href="https://www.wpi.edu/academics/departments/mechanical-materials-engineering"
+             title="Mechanical & Materials Engineering @ WPI"
+             target="_blank"
+             rel="noreferrer">
+            <span>Mechanical & Materials Engineering department</span>
+          </a>
+          at WPI. the app itself is a gamification proof-of-concept in teaching introductory physics concepts
+          implemented in Unity. However, keeping the app's public trial online has warranted a much richer
+          ecosystem of frameworks and moving parts.
+        </p>
+        <p>
+          Thanks to the hard work of many student specialists, this necessary infrastructure developed piece-by-piece
+          over time. The downside was that, without executive oversight, some of these pieces meshed unevenly with one
+          another, hampering the accessibility of the app.
+          Students were required to individually add themselves to a class, with no security to ensure correct
+          registrants.
+          An exposed one-time code was used to connect each student to their class, adding inconvenient steps.
+          Direct intervention by programmers was required to add new instructors, and each instructor could host only
+          one class.
+        </p>
+        <p>
+          My task was to unify all of these parts into a smooth, easy workflow for students and instructors. This saw me
+          wearing <i>many</i> hats at once – all told, I wrote markup and scripts in seven languages as I bounced
+          between Svelte, CSS, pure HTML/JS, backend Python + MongoDB commands, Unity UI behaviors, and Docker
+          configuration content. I'm pleased to have addressed all of the listed issues, plus many other bugs.
+        </p>
+        <p>
+          I overhauled the FBD join flow to be as one-click as possible. Building a class-management interface and API
+          from the ground up, I introduced classes of two kinds: "academic" classes requiring
+          direct verification of emails against a roster, and – inspired by the <i>Kahoot!</i> gamified-quiz platform –
+          "trial" classes allowing any visitor to join with an invite code. Both of these are facilitated by a robust
+          SMTP-based invitation mailer, as well as Unity's deep linking functionality to skip the need for
+          copy-pasted login tokens and instead quietly utilize them without the user's help.
+          On average this reduces the join process to simply installing an app, tapping a link, and entering your name.
+        </p>
       </div>
     </div>
 
     <div class="project-block">
       <a href="https://comroddity.wpi.edu/" title="Comroddity: Unexpect Everything!" target="_blank" rel="noreferrer">
-        <h3 id="comroddity">ARG webware for <i>Comroddity!</i></h3>
+        <h3 id="comroddity">ARG webware for <i>Comroddity</i></h3>
         <hr>
         <img src="img/thumb/comroddity.png" alt="Comroddity: Unexpect Everything! logo and graphic">
       </a>
 
       <div>
-        <p>&ltMORE INFO SOON&gt</p>
+        <p>
+          <a class="width-kept"
+             href="https://digital.wpi.edu/concern/student_works/1v53k242j?locale=en"
+             title="Comroddity, the Alternate Reality Game Show  |  Digital WPI"
+             target="_blank"
+             rel="noreferrer">
+            <span><i>View the 2024 MQP paper here!</i></span>
+          </a>
+        </p>
+        <p>
+          My
+          <a class="width-kept"
+             href="https://www.wpi.edu/project-based-learning/project-based-education/major-qualifying-project"
+             title="Major Qualifying Project @ WPI"
+             target="_blank"
+             rel="noreferrer">
+            <span>Major Qualifying Project</span>
+          </a>
+          (MQP) at WPI, <i>Comroddity, the Alternate Reality Game Show</i>, saw myself and five creative peers testing
+          the waters for
+          <a class="width-kept"
+             href="https://en.wikipedia.org/wiki/Alternate_reality_game"
+             title="'Alternate reality game' on Wikipedia"
+             target="_blank"
+             rel="noreferrer">
+            <span>alternate reality games</span>
+          </a>
+          as an accessible long-form campus activity and community-building medium.
+          I was our team's resident full-stack web engineer, in charge of our game's progress database and cloud hosting
+          of three "story sites". I was also the React developer for our game's central hub, the <i>Comroddity</i> web
+          application.
+        </p>
+        <p>
+          This project was one of my most schedule intensive, as is the nature of a "living" public game. The central
+          app went through several iterations as our design team refined their mockups; these changes helped us find the
+          "core" of the game's artistic vision, a prevailing sense of coziness intentionally undercut by cryptic and
+          eerie elements. Especially of note is the animated "ransom note" menu font which I scripted to this end.
+        </p>
+        <p>
+          Our team was proud to receive IMGD's own MQP award in innovation. Though our scope had to be adjusted on many
+          occasions and not every idea was fully realized, we are happy to have cut much of the red tape facing academic
+          ARGs, and thoroughly enjoyed engaging with our small community of dedicated players.
+        </p>
       </div>
     </div>
 
