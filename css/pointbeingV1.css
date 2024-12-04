@@ -110,6 +110,7 @@ a[target="_blank"]:after {
   font-size: larger;
 
   font-weight: normal;
+  font-style: normal;
   font-family: Symbola, sans-serif;
 }
 
@@ -405,6 +406,7 @@ ul.notes-inline > li:not(:last-child):after {
   font-size: larger;
 
   font-weight: normal;
+  font-style: normal;
   font-family: Symbola, sans-serif;
 }
 
